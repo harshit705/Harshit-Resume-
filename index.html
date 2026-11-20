@@ -217,7 +217,7 @@
       <h2>Technical Skills</h2>
       <ul class="skills-list">
         <li><strong>Languages & Core:</strong> Python, JavaScript, SQL, Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP)</li>
-        <li><strong>AI & LLM Integration:</strong> OpenAI API, LLM Integration, Prompt Engineering, Whisper</li>
+        <li><strong>AI & LLM Integration:</strong> OpenAI API, LLM Integration, Prompt Engineering, Whisper, faster-whisper</li>
         <li><strong>Backend & APIs:</strong> FastAPI, Flask, Node.js, Express.js, REST APIs, JWT Authentication</li>
         <li><strong>Frontend Development:</strong> React.js, Next.js, HTML5, CSS3, Tailwind CSS</li>
         <li><strong>Databases & Caching:</strong> PostgreSQL, MongoDB, Redis</li>
@@ -267,40 +267,43 @@
     <!-- PROJECTS -->
     <section>
       <h2>Projects</h2>
+      
+      <!-- 1. TenderSathi (Flagship Data Engineering) -->
       <div class="subheading">
         <div class="row">
-          <span><strong class="bold">TenderSathi – AI Procurement Intelligence Platform</strong> | <em>Python, FastAPI, PostgreSQL, Next.js</em></span>
+          <span><strong class="bold">TenderSathi – AI Procurement Intelligence Platform</strong> | <em>Python, FastAPI, PostgreSQL, Next.js, Playwright</em></span>
           <span class="right"><a href="https://dev.tendersathi.xyz/" target="_blank" style="text-decoration: underline;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></span>
         </div>
         <ul>
-          <li>Built an AI procurement platform aggregating 10,000+ active tenders across 20+ states and central government portals.</li>
-          <li>Engineered automated ingestion and deduplication workflows with Python and PostgreSQL for clean document indexing.</li>
-          <li>Created role-based dashboards and REST APIs supporting tender discovery, keyword analytics, and secure user sessions.</li>
+          <li>Developed a procurement intelligence platform aggregating 10,000+ active tenders across 20+ state and central government portals.</li>
+          <li>Engineered automated data scraping, ingestion, validation, and deduplication pipelines using Python, Playwright, and PostgreSQL to maintain structured tender records.</li>
+          <li>Implemented role-based dashboards, tender discovery, keyword analytics, document management, and RESTful APIs using FastAPI and Next.js.</li>
         </ul>
       </div>
 
+      <!-- 2. PSAI (Conversational AI Platform) -->
       <div class="subheading" style="margin-top: 5px;">
         <div class="row">
-          <span><strong class="bold">AI-Powered Podcast Editor</strong> | <em>Python, Flask, React.js, Whisper, FFmpeg, Redis</em></span>
-          <span class="right"><a href="https://github.com/harshit705/podcast-editor" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
-        </div>
-        <ul>
-          <li>Developed an automated audio processing application that generates timestamped text transcripts from audio files using OpenAI Whisper.</li>
-          <li>Built asynchronous background task workflows using Redis queues and Flask APIs to handle intensive audio segmentation and silence detection.</li>
-          <li>Integrated FFmpeg processing scripts to cut, clean, and export audio tracks alongside an interactive React UI for synchronized transcript review.</li>
-        </ul>
-      </div>
-
-      <div class="subheading" style="margin-top: 5px;">
-        <div class="row">
-          <span><strong class="bold">PSAI – Conversational AI Platform</strong> | <em>React.js, Next.js, Node.js, MongoDB</em></span>
+          <span><strong class="bold">PSAI – Conversational AI Platform</strong> | <em>React.js, Next.js, Node.js, Express.js, MongoDB, JWT, OpenAI API</em></span>
           <span class="right"><a href="https://github.com/harshit705/Psai-Chatbot" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
         </div>
         <ul>
-          <li>Built a full-stack conversational AI platform, deployed live and actively accessible to real users.</li>
-          <li>Developed multi-turn conversation persistence, session management, and JWT-based authentication.</li>
-          <li>Implemented REST backend services managing prompt context, chat history, and streaming AI responses.</li>
-          <li>Delivered a responsive UI with conversation branching, prompt customization, and workspace dashboards.</li>
+          <li>Developed a full-stack conversational AI platform supporting multi-turn conversations, chat history persistence, and customizable AI interactions.</li>
+          <li>Implemented Node.js and Express.js backend services with REST APIs, JWT authentication, session management, and conversation data persistence using MongoDB.</li>
+          <li>Built a responsive React.js and Next.js interface featuring chat workspaces, conversation management, and AI model integration, deployed on Vercel and Render.</li>
+        </ul>
+      </div>
+
+      <!-- 3. AI Podcast Editor (Speech Processing & Media Engineering) -->
+      <div class="subheading" style="margin-top: 5px;">
+        <div class="row">
+          <span><strong class="bold">AI-Powered Podcast Editor</strong> | <em>Python, FastAPI, React.js, Vite, faster-whisper, VAD, FFmpeg</em></span>
+          <span class="right"><a href="https://github.com/harshit705/podcast-editor" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
+        </div>
+        <ul>
+          <li>Developed an automated speech-to-text pipeline using faster-whisper to generate accurate, timestamped transcripts from uploaded audio files.</li>
+          <li>Implemented Voice Activity Detection (VAD) and asynchronous background processing with FastAPI to handle silence detection and audio segmentation.</li>
+          <li>Integrated FFmpeg processing scripts to cut, clean, and export audio segments alongside an interactive React/Vite interface for transcript review and editing.</li>
         </ul>
       </div>
     </section>
