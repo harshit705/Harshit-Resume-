@@ -7,7 +7,7 @@
   <style>
     @page {
       size: A4 portrait;
-      margin: 0.18in 0.35in 0.15in 0.35in;
+      margin: 0.22in 0.38in 0.20in 0.38in;
     }
     * {
       box-sizing: border-box;
@@ -17,34 +17,29 @@
     body {
       font-family: "Times New Roman", Times, serif;
       color: #111;
-      line-height: 1.18;
-      font-size: 8.75pt;
+      line-height: 1.25;
+      font-size: 9.15pt;
       background: #f4f4f4;
-      padding: 10px 0;
+      padding: 12px 0;
     }
     .page {
       background: #fff;
       width: 8.27in;
       min-height: 11.69in;
       margin: 0 auto;
-      padding: 0.18in 0.35in 0.15in 0.35in;
+      padding: 0.25in 0.40in 0.20in 0.40in;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     @media print {
-      @page {
-        size: A4 portrait;
-        margin: 0.18in 0.35in 0.15in 0.35in;
-      }
       body {
         background: none;
         padding: 0;
       }
       .page {
         box-shadow: none;
-        padding: 0 !important;
-        margin: 0 !important;
-        width: 100% !important;
-        min-height: auto !important;
+        padding: 0;
+        width: 100%;
+        min-height: auto;
       }
       .no-print {
         display: none !important;
@@ -56,49 +51,49 @@
     }
     header {
       text-align: center;
-      margin-bottom: 3.5px;
+      margin-bottom: 6px;
     }
     header h1 {
-      font-size: 18pt;
+      font-size: 20pt;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 2px;
+      letter-spacing: 0.6px;
+      margin-bottom: 3px;
     }
     .contact-line {
-      font-size: 8.6pt;
+      font-size: 9.0pt;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 8px;
+      gap: 9px;
       flex-wrap: wrap;
     }
     .contact-line i {
-      font-size: 7.8pt;
+      font-size: 8.2pt;
     }
     .divider {
       color: #555;
     }
     section {
-      margin-bottom: 4px;
+      margin-bottom: 6.5px;
     }
     section:last-child {
       margin-bottom: 0;
     }
     h2 {
-      font-size: 9.6pt;
+      font-size: 10.2pt;
       font-variant: small-caps;
       text-transform: uppercase;
-      letter-spacing: 0.4px;
-      border-bottom: 1px solid #111;
+      letter-spacing: 0.5px;
+      border-bottom: 1.1px solid #111;
       padding-bottom: 0.5px;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
       font-weight: bold;
     }
     .summary-text {
-      font-size: 8.75pt;
+      font-size: 9.15pt;
       text-align: justify;
-      line-height: 1.18;
+      line-height: 1.25;
     }
     .row {
       display: flex;
@@ -119,13 +114,13 @@
       border: 0;
     }
     .subheading {
-      margin-bottom: 2.5px;
+      margin-bottom: 4.5px;
     }
     .subheading:last-child {
       margin-bottom: 0;
     }
     .company-title, .role-row {
-      margin-bottom: 0.5px;
+      margin-bottom: 1px;
     }
     .bold {
       font-weight: bold;
@@ -137,18 +132,18 @@
       text-align: right;
       white-space: nowrap;
       flex-shrink: 0;
-      margin-left: 8px;
+      margin-left: 10px;
     }
     ul {
       list-style-type: disc;
-      padding-left: 15px;
-      margin-top: 1px;
-      margin-bottom: 1px;
+      padding-left: 17px;
+      margin-top: 1.5px;
+      margin-bottom: 1.5px;
     }
     li {
-      margin-bottom: 1.1px;
-      font-size: 8.75pt;
-      line-height: 1.18;
+      margin-bottom: 1.6px;
+      font-size: 9.15pt;
+      line-height: 1.24;
       text-align: justify;
     }
     .skills-list {
@@ -157,21 +152,21 @@
       margin: 0;
     }
     .skills-list li {
-      margin-bottom: 1.1px;
-      font-size: 8.75pt;
-      line-height: 1.18;
+      margin-bottom: 1.6px;
+      font-size: 9.15pt;
+      line-height: 1.24;
       text-align: left;
     }
     .cert-list {
       list-style-type: disc;
-      padding-left: 15px;
-      margin-top: 1px;
+      padding-left: 17px;
+      margin-top: 1.5px;
       margin-bottom: 0;
     }
     .cert-list li {
-      margin-bottom: 1.1px;
-      font-size: 8.75pt;
-      line-height: 1.18;
+      margin-bottom: 1.6px;
+      font-size: 9.15pt;
+      line-height: 1.24;
       text-align: left;
     }
     .actions-bar {
@@ -265,7 +260,7 @@
         </ul>
       </div>
 
-      <div class="subheading" style="margin-top: 2px;">
+      <div class="subheading" style="margin-top: 4.5px;">
         <div class="row company-title">
           <span class="bold">Pratham Software Pvt. Ltd.</span>
           <span class="separator"> | </span>
@@ -304,7 +299,7 @@
       </div>
 
       <!-- 2. PSAI (Conversational AI Platform) -->
-      <div class="subheading" style="margin-top: 2px;">
+      <div class="subheading" style="margin-top: 3.5px;">
         <div class="row">
           <span><strong class="bold">PSAI – Conversational AI Platform</strong> | <em>React.js, Next.js, Node.js, Express.js, MongoDB, JWT, OpenAI API</em></span>
           <span class="separator"> | </span>
@@ -318,7 +313,7 @@
       </div>
 
       <!-- 3. AI Podcast Editor (Speech Processing & Media Engineering) -->
-      <div class="subheading" style="margin-top: 2px;">
+      <div class="subheading" style="margin-top: 3.5px;">
         <div class="row">
           <span><strong class="bold">AI-Powered Podcast Editor</strong> | <em>Python, FastAPI, React.js, Vite, faster-whisper, VAD, FFmpeg</em></span>
           <span class="separator"> | </span>
