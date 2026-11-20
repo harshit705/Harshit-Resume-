@@ -99,12 +99,16 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      width: 100%;
     }
     .subheading {
-      margin-bottom: 6px;
+      margin-bottom: 7px;
     }
     .subheading:last-child {
       margin-bottom: 0;
+    }
+    .company-title, .role-row {
+      margin-bottom: 1.5px;
     }
     .bold {
       font-weight: bold;
@@ -115,17 +119,20 @@
     .right {
       text-align: right;
       white-space: nowrap;
+      flex-shrink: 0;
+      margin-left: 10px;
     }
     ul {
       list-style-type: disc;
-      padding-left: 17px;
+      padding-left: 18px;
       margin-top: 2px;
       margin-bottom: 2px;
     }
     li {
-      margin-bottom: 2.6px;
+      margin-bottom: 2.5px;
       font-size: 9.4pt;
       line-height: 1.30;
+      text-align: justify;
     }
     .skills-list {
       list-style: none;
@@ -133,9 +140,22 @@
       margin: 0;
     }
     .skills-list li {
-      margin-bottom: 2.6px;
+      margin-bottom: 2.5px;
       font-size: 9.4pt;
       line-height: 1.30;
+      text-align: left;
+    }
+    .cert-list {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+    .cert-list li {
+      margin-bottom: 2.5px;
+      font-size: 9.4pt;
+      line-height: 1.30;
+      text-align: left;
     }
     .actions-bar {
       width: 8.27in;
@@ -210,11 +230,11 @@
     <section>
       <h2>Professional Experience</h2>
       <div class="subheading">
-        <div class="row">
+        <div class="row company-title">
           <span class="bold">TarqaAI Solutions</span>
           <span class="right">Jaipur, Rajasthan</span>
         </div>
-        <div class="row">
+        <div class="row role-row">
           <span class="italic">Software Engineer</span>
           <span class="italic right">March 2026 – October 2026</span>
         </div>
@@ -227,11 +247,11 @@
       </div>
 
       <div class="subheading" style="margin-top: 7px;">
-        <div class="row">
+        <div class="row company-title">
           <span class="bold">Pratham Software Pvt. Ltd.</span>
           <span class="right">Jaipur, Rajasthan</span>
         </div>
-        <div class="row">
+        <div class="row role-row">
           <span class="italic">Software Engineer Intern</span>
           <span class="italic right">May 2025 – August 2025</span>
         </div>
@@ -249,7 +269,8 @@
       <h2>Projects</h2>
       <div class="subheading">
         <div class="row">
-          <span><strong class="bold">TenderSathi – AI Procurement Intelligence Platform</strong> | <em>Python, FastAPI, PostgreSQL, Next.js</em> | <a href="https://dev.tendersathi.xyz/" target="_blank" style="text-decoration: underline;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></span>
+          <span><strong class="bold">TenderSathi – AI Procurement Intelligence Platform</strong> | <em>Python, FastAPI, PostgreSQL, Next.js</em></span>
+          <span class="right"><a href="https://dev.tendersathi.xyz/" target="_blank" style="text-decoration: underline;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></span>
         </div>
         <ul>
           <li>Built an AI procurement platform aggregating 10,000+ active tenders across 20+ states and central government portals.</li>
@@ -260,7 +281,8 @@
 
       <div class="subheading" style="margin-top: 5px;">
         <div class="row">
-          <span><strong class="bold">AI-Powered Podcast Editor</strong> | <em>Python, Flask, React.js, Whisper, FFmpeg, Redis</em> | <a href="https://github.com/harshit705/podcast-editor" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
+          <span><strong class="bold">AI-Powered Podcast Editor</strong> | <em>Python, Flask, React.js, Whisper, FFmpeg, Redis</em></span>
+          <span class="right"><a href="https://github.com/harshit705/podcast-editor" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
         </div>
         <ul>
           <li>Developed an automated audio processing application that generates timestamped text transcripts from audio files using OpenAI Whisper.</li>
@@ -271,7 +293,8 @@
 
       <div class="subheading" style="margin-top: 5px;">
         <div class="row">
-          <span><strong class="bold">PSAI – Conversational AI Platform</strong> | <em>React.js, Next.js, Node.js, MongoDB, JWT | Frontend: Vercel, Backend: Render</em> | <a href="https://github.com/harshit705/Psai-Chatbot" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
+          <span><strong class="bold">PSAI – Conversational AI Platform</strong> | <em>React.js, Next.js, Node.js, MongoDB</em></span>
+          <span class="right"><a href="https://github.com/harshit705/Psai-Chatbot" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
         </div>
         <ul>
           <li>Built a full-stack conversational AI platform, deployed live and actively accessible to real users.</li>
@@ -286,11 +309,11 @@
     <section>
       <h2>Education</h2>
       <div class="subheading">
-        <div class="row">
+        <div class="row company-title">
           <span class="bold">Government Engineering College, Bharatpur (RTU Kota)</span>
           <span class="right">Bharatpur, Rajasthan</span>
         </div>
-        <div class="row">
+        <div class="row role-row">
           <span class="italic">Bachelor of Technology in Computer Science and Engineering &nbsp;|&nbsp; <span class="bold">CGPA: 8.40/10</span></span>
           <span class="italic right">August 2022 – May 2026</span>
         </div>
@@ -300,16 +323,20 @@
     <!-- CERTIFICATIONS & ACHIEVEMENTS -->
     <section>
       <h2>Certifications & Achievements</h2>
-      <div class="subheading">
-        <div class="row">
-          <span>• <strong>Oracle Cloud Infrastructure (OCI) 2025</strong> – AI Foundations Associate</span>
-          <span class="italic right">September 2025</span>
-        </div>
-        <div class="row" style="margin-top: 2.5px;">
-          <span>• Participated in the <strong>Industry-Level Hackathon</strong> organized by Pratham Software Pvt. Ltd., Jaipur</span>
-          <span class="italic right">June 2025</span>
-        </div>
-      </div>
+      <ul class="cert-list">
+        <li>
+          <div class="row">
+            <span><strong>Oracle Cloud Infrastructure (OCI) 2025</strong> – AI Foundations Associate</span>
+            <span class="italic right">September 2025</span>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <span>Participated in the <strong>Industry-Level Hackathon</strong> organized by Pratham Software Pvt. Ltd., Jaipur</span>
+            <span class="italic right">June 2025</span>
+          </div>
+        </li>
+      </ul>
     </section>
   </div>
 
