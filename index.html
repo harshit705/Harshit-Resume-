@@ -283,45 +283,45 @@
     <section>
       <h2>Projects</h2>
       
-      <!-- 1. TenderSathi (Flagship Data Engineering) -->
+      <!-- 1. TenderSathi – Procurement Intelligence Platform -->
       <div class="subheading">
         <div class="row">
-          <span><strong class="bold">TenderSathi</strong> | <em>Python, FastAPI, PostgreSQL, Next.js, Playwright</em></span>
+          <span><strong class="bold">TenderSathi – Procurement Intelligence Platform</strong> | <em>Python, FastAPI, PostgreSQL, Next.js, TypeScript, Playwright, BeautifulSoup, Docker, GCP Cloud Run</em></span>
           <span class="separator"> | </span>
           <span class="right"><a href="https://dev.tendersathi.xyz/" target="_blank" style="text-decoration: underline;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></span>
         </div>
         <ul>
-          <li>Developed a procurement intelligence platform aggregating 10,000+ active tenders across 20+ states and central government portals.</li>
-          <li>Engineered automated data scraping, ingestion, validation, and deduplication pipelines using Python, Playwright, and PostgreSQL to maintain structured tender records.</li>
-          <li>Implemented role-based dashboards, tender discovery, keyword analytics, document management, and RESTful APIs using FastAPI and Next.js.</li>
+          <li>Built an automated crawler aggregating 10,000+ live tenders from 30+ government portals using Playwright and BeautifulSoup, with automated session management and token-bucket rate limiting to keep scrapers stable against portal timeouts.</li>
+          <li>Designed a PostgreSQL ingestion pipeline with 14 versioned migrations, content-hash deduplication enforced by unique constraints, and a quarantine table that isolates malformed records for review.</li>
+          <li>Developed a role-based procurement platform in Next.js (TypeScript) and FastAPI with 32 workflows across Admin, Analyst, and Client workspaces, 76 REST endpoints, JWT authentication, and streaming Excel/CSV exports.</li>
         </ul>
       </div>
 
-      <!-- 2. PSAI (Conversational AI Platform) -->
+      <!-- 2. PSAI Chatbot – Multi-Provider AI Gateway & Workspace -->
       <div class="subheading" style="margin-top: 3px;">
         <div class="row">
-          <span><strong class="bold">PSAI – Conversational AI Platform</strong> | <em>React.js, Next.js, Node.js, Express.js, MongoDB, JWT, OpenAI API</em></span>
+          <span><strong class="bold">PSAI Chatbot – Multi-Provider AI Gateway & Workspace</strong> | <em>Node.js, Express 5, MongoDB Atlas, Mongoose, Server-Sent Events (SSE), React.js, JWT, Nodemailer</em></span>
           <span class="separator"> | </span>
           <span class="right"><a href="https://github.com/harshit705/Psai-Chatbot" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
         </div>
         <ul>
-          <li>Developed a full-stack conversational AI platform supporting multi-turn conversations, chat history persistence, and customizable system prompts.</li>
-          <li>Implemented Node.js and Express.js backend services with REST APIs, JWT-based authentication and session handling, and MongoDB data persistence.</li>
-          <li>Built a responsive React.js and Next.js interface featuring chat workspaces, conversation management, and OpenAI API integration, deployed on Vercel and Render.</li>
+          <li>Architected an AI gateway in Node.js and Express 5 unifying 10 LLMs across 4 provider APIs, with a dynamic model registry, circuit breakers, and automatic failover that reroutes requests when a provider fails.</li>
+          <li>Implemented a Server-Sent Events (SSE) streaming pipeline delivering real-time chunked inference to a React workspace, standardizing disparate provider response payloads and reducing perceived latency.</li>
+          <li>Built a secure user workspace backed by MongoDB Atlas, featuring JWT authentication, sliding-window rate limiting to prevent API exhaustion, and Nodemailer-based OTP workflows for automated password recovery.</li>
         </ul>
       </div>
 
-      <!-- 3. AI Podcast Editor (Speech Processing & Media Engineering) -->
+      <!-- 3. AI Podcast Editor – Audio & Multitrack Timeline Platform -->
       <div class="subheading" style="margin-top: 3px;">
         <div class="row">
-          <span><strong class="bold">AI-Powered Podcast Editor</strong> | <em>Python, FastAPI, React.js, Vite, faster-whisper, VAD, FFmpeg</em></span>
+          <span><strong class="bold">AI Podcast Editor – Audio & Multitrack Timeline Platform</strong> | <em>Python, FastAPI, faster-whisper (CTranslate2), FFmpeg, NumPy, SciPy, React.js, Vite, shadcn/ui</em></span>
           <span class="separator"> | </span>
           <span class="right"><a href="https://github.com/harshit705/podcast-editor" target="_blank" style="text-decoration: underline;"><i class="fa-brands fa-github"></i> Repository</a></span>
         </div>
         <ul>
-          <li>Developed an automated speech-to-text pipeline using faster-whisper to generate timestamped text transcripts from uploaded audio files.</li>
-          <li>Implemented Voice Activity Detection (VAD) and asynchronous background processing with FastAPI to handle silence detection and audio segmentation.</li>
-          <li>Integrated FFmpeg processing scripts to cut, clean, and export audio segments alongside an interactive React/Vite interface for transcript review and editing.</li>
+          <li>Developed a speech-to-text pipeline using quantized faster-whisper (medium, int8) and FFmpeg, generating word-level timestamps from 16kHz mono audio to power transcript-based editing.</li>
+          <li>Engineered an energy-based silence detector in NumPy and SciPy (threshold −40 dBFS) that segments long pauses and generates frame-accurate cuts through FFmpeg filtergraphs.</li>
+          <li>Implemented a multi-format editorial export engine in FastAPI, compiling text-based timeline edits into industry-standard NLE interchange formats including Final Cut Pro XML (FCPXML), CMX 3600 EDL, OpenTimelineIO, and SRT/VTT subtitles.</li>
         </ul>
       </div>
     </section>
